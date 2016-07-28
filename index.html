@@ -1,0 +1,176 @@
+<!--
+     Carter's Garden Center
+      
+       Home page 
+      Author: Carter Sills
+      Date: 11/4/2014   
+
+      Filename:    index.html
+            
+   -->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>Carter's Garden Center</title>
+<meta name="Description" content="Official Site of Carter's Garden Center">
+<meta name="KeyWords" content="Carter's, Garden, Center, Flowers, Vegetables, Gallery, Landscaping">
+
+<link rel="stylesheet" href="mobilenav.css" type="text/css">
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montez|Pinyon+Script' rel='stylesheet' type='text/css'>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body class="outer-background">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="SpryAssets/SpryMenuBar.js"></script>
+<script type="text/javascript" src="mobilenav.js"></script>
+<section class="pagewrapper">
+  <header id="headertop">
+<h1 class="greeting"><a href="index.html">Carter's Garden Center</a></h1>
+<div class="time" ><h1 id="dtField">Javascript Not Enabled</h1></div>
+<input id="getname" name="btnName" type="button" value="Personalize this Page" onClick="printName()">
+</header>
+
+
+<nav id="mainnav">
+<ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a class="MenuBarItemSubmenu" href="seeds.html">Seeds</a>
+      <ul>
+        <li><a href="seeds.html#flowers">Flowers</a></li>
+        <li><a href="seeds.html#veggies">Vegatables</a></li>
+      </ul>
+    </li>
+    <li><a href="slideshow.html" class="MenuBarItemSubmenu">Flowers</a>
+      <ul>
+        <li><a href="slideshow.html#flowers">Slideshow</a></li>
+        <li><a href="gallery.html#flowers">Gallery</a></li>
+      </ul>
+    </li>
+    <li><a href="articles.html" class="MenuBarItemSubmenu">Articles</a>
+      <ul>
+        <li><a href="articles.html#togglechild">Tips</a></li>
+        <li><a href="articles.html#article2">Plant Care</a></li>
+      </ul>
+    </li>
+    <li><a href="slideshow.html" class="MenuBarItemSubmenu">Vegetables</a>
+      <ul>
+        <li><a href="slideshow.html#veggies">Slideshow</a></li>
+        <li><a href="gallery.html#veggie">Gallery</a></li>
+      </ul>
+    </li>
+    <li><a class="MenuBarItemSubmenu" href="contact_us.html">About Us</a>
+      <ul>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="mailto:csills2313@gmail.com">Email Us</a></li>
+</ul>
+    </li>
+</ul>
+  </nav>
+  <div class="clearboth"></div>
+  <nav id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='seeds.html'><span>Seeds</span></a>
+      <ul>
+         <li><a href='seeds.html#flowers'><span>Flower Seeds</span></a></li>
+         <li><a href='seeds.html#veggies'><span>Vegetable Seeds</span></a></li>
+         <li><a href='slideshow.html#flowers'><span>Slide Show</span></a></li>
+         <li><a href='gallery.html#flowers'><span>Gallery</span></a></li>
+         <li><a href='articles.html'><span>Tips</span></a></li>
+         <li class='last'><a href='articles.html'><span>Plant Care</span></a></li>            
+      </ul>
+   </li>     
+   <li class='has-sub'><a href='contact_us.html'><span>About Us</span></a>
+      <ul>
+         <li><a href='contact_us.html'><span>Contact US</span></a></li>
+         <li class='last'><a href='mailto:csills2313@gmail.com'><span>Email Us</span></a></li>
+      </ul>
+   </li>   
+</ul>
+</nav>
+  
+<div id="separator" class="separator"></div>
+<div><p></p></div>
+<div class="division"><input id="toggle" name="btnshow" type="button" class="collapseicon" value="show/hide">
+<h2>The Joy of Gardening</h2>
+</div>
+
+<div id="togglechild" class="toggleme"><aside class="mainaside">
+
+  <h2>Winter Gardening</h2>
+  <h2><a href="http://www.southernexposure.com/southern-exposures-fallwinter-gardening-guide-ezp-38.html" target="new">Southern Exposure</a></h2>
+  <hr>
+  <p><img name="image" src="images/cabbages.jpg" alt="" style="background-color: #009933"> </p>
+  <h2>Spring Gardening</h2>
+  <h2><a href="http://www.southernstates.com/articles/vegetable-planting-chart.aspx" target="new">Spring Guide</a></h2>
+  <p><img src="images/smallgarden.jpg" alt="" style="background-color: #009933"></p>
+  <p>&nbsp;</p>
+  <h2>Fall Gardening</h2>
+  <h2><a href="http://www.southernexposure.com/southern-exposures-fallwinter-gardening-guide-ezp-38.html" target="new">Fall Guide</a></h2>
+  <p><img src="images/cabbages.jpg" alt="" name="" style="background-color: #009933"></p>
+</aside>
+<article id="mainarticle">
+  <p><img src="images/squash.jpg" alt="squash">Gardening of all types is a great pastime that allows us to become closer to nature and helps teach us to become good wards of our environment. It allows us to escape the confines our our day today routine and allows us to relax and gives us an outlet to relieve the stress in our day to day lives. Sitting behind a desk all day is certainly not good for anyone's health or spirit in general. </p>
+  <p><strong>Flower Gardens</strong></p>
+
+<p>Flower gardens can really do wonders for a home. Before you plant your flower gardens, you should sketch your garden layout so that you have a good visualization of what your flower beds and flower borders are going to look like. A well planned and organized garden really adds value to a home. A poorly laid out garden looks messy and will cause much frustration and disappointment down the road. </p>
+<p><strong>Proper care</strong></p>
+
+<p>Even after the planning and actual planting of your garden are completed, there is still plenty of work to be done. Lawns and borders require regular watering and fertilization to keep them health. Also pests must be contained or controlled by some method. Whether you use commercial pesticides or organic methods is strictly up to you. Weeding is a time consuming task and requires constant vigilance to keep the invaders under control. Many plants have to be re-planted yearly unless you choose to plant perennials which grow each season without having to be replanted. Replenishing or replacing the soil helps keep parasites from building up in the soil and also replenishes organic matter that is a necessity for healthy plant root systems. </p>
+<p><strong>Fall and Winter</strong></p>
+
+<p>Fall and Winter are usually good times for cleaning up garden debri and turning garden trash, leaves and other organic matter into compost. Compost can be a invaluable aid in soil preperatin as it helps replenish much needed organic matter that helps hold moisture in the soil and allows for aeration of the soil so that root plant root systems are less vulnerable to rot and fungus. Fall and Winter are also good times to prune shrubs, bushes and border plants as many of these plants go dormant during these seasons. </p>
+</article>
+</div>
+
+<div class="clearboth"></div>
+<div class="division"> 
+  <h2>Vegetable Gardening</h2>
+</div>
+
+<article id="mainarticle2">
+  <p><img src="images/squash2.jpg" alt="squaxh">The joy of vegetable gardening ranges from planning your garden in the fall or winter to harvesting in the summer or fall. Fresh home grown vegetables such as beans, tomatoes, tomatoes and zucchini, add more joy to your meals. If you stagger your planting times you can enjoy a new crop of vegetable delights every week. </p>
+  <p><strong>Garden Plants</strong></p>
+
+<p>Vegetable gardens are a great source of fresh vegetables. any other garden on your property. Vegetable gardens can be as attractive as any flower garden with many different choices of plants such as annuals, perennials, warm-season and cool-season plants. You can always experiment with different varieties and strains of vegetable plants to see which performs best for your region and climate. </p>
+<p><strong>Starting a Vegetable Garden</strong></p>
+<p>Before planting a vegetable garden, you'll want to make sure that you have given yourself the best chance at success. You should work to assess your climate for a vegetable garden in your area, design and layout your vegetable garden, work to improve your vegetable garden soil and you will be well on your way to starting and having a great vegetable garden that will provide many hours of enjoyment and fresh food for the table.</p>
+<p><strong>Fresh Vegetables </strong></p>
+
+<p>One of the  best parts of growing a vegetable garden is the edible bounty it produces at the end of the season. You will probably need help with choosing the different vegetables for your garden. We'll teach you how to grow specific vegetables. Learn about the different vegetable types. If you can't wait until next season, we'll show you how to select and store vegetables, as well as the health benefits for vegetables. </p>
+<p><strong>Vegetable Garden Growing Tips</strong></p>
+
+<p> You may know you have a problem in the vegetable garden, but you're not sure exactly what it is? Sometimes the symptoms are a indicator of a much larger problem. The soil acid content may be too high which can stunt growth of certain vegetable plants. The same applies to soil that is to alkaline. If you are not sure if the soil is your problem, you can purchase soil testing equipment from various souces such as Lowe's, Amazon.com or Home Depot. All of these outlets are usually stocked with garden plants, gardening tools and other supplies. </p>
+
+  
+</article>
+</section>
+
+<div class="clearboth"></div>
+
+
+<footer class="footer">
+<div id="footercontent">
+
+  <h1>Created By Carter Sills 2014</h1>
+  <h2>All images obtained from <a href="http://all-free-download.com/free-photos/flower-images.html">All-Free-Download.com</a></h2>
+</div>
+
+</footer>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

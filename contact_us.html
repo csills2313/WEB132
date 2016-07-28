@@ -1,0 +1,187 @@
+
+<!--
+     Carter's Garden Center
+      
+       Contact Us page 
+      Author: Carter Sills
+      Date: 11/4/2014   
+
+      Filename:    contact_us.html
+            
+   -->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>Carter's Garden Center Contact_Us</title>
+<meta name="Description" content="Official Site of Carter's Garden Center">
+<meta name="KeyWords" content="Carter's, Garden, Center, Flowers, Vegetables, Gallery, Landscaping">
+<link rel="stylesheet" href="mobilenav.css" type="text/css">
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montez|Pinyon+Script' rel='stylesheet' type='text/css'>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<link href="form.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+</head>
+
+<body class="outer-background">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="SpryAssets/SpryMenuBar.js"></script>
+<script type="text/javascript" src="mobilenav.js"></script>
+<section class="pagewrapper">
+  <header id="headertop">
+<h1 class="greeting"><a href="index.html">Carter's Garden Center</a></h1>
+<div class="time" align="right"><h1 id="dtField">Javascript Not Enabled</h1></div>
+</header>
+
+
+<nav id="mainnav">
+<ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a class="MenuBarItemSubmenu" href="seeds.html">Seeds</a>
+      <ul>
+        <li><a href="seeds.html#flowers">Flowers</a></li>
+        <li><a href="seeds.html#veggies">Vegatables</a></li>
+      </ul>
+    </li>
+    <li><a href="slideshow.html" class="MenuBarItemSubmenu">Flowers</a>
+      <ul>
+        <li><a href="slideshow.html#flowers">Slideshow</a></li>
+        <li><a href="gallery.html#flowers">Gallery</a></li>
+      </ul>
+    </li>
+    <li><a href="articles.html" class="MenuBarItemSubmenu">Articles</a>
+      <ul>
+        <li><a href="articles.html#togglechild">Tips</a></li>
+        <li><a href="articles.html#artcle2">Plant Care</a></li>
+      </ul>
+    </li>
+    <li><a href="slideshow.html" class="MenuBarItemSubmenu">Vegetables</a>
+      <ul>
+        <li><a href="slideshow.html#veggies">Slideshow</a></li>
+        <li><a href="gallery.html#veggie">Gallery</a></li>
+      </ul>
+    </li>
+    <li><a class="MenuBarItemSubmenu" href="contact_us.html">About Us</a>
+      <ul>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="mailto:csills2313@gmail.com">Email Us</a></li>
+</ul>
+    </li>
+</ul>
+  </nav>
+  <div class="clearboth"></div>  
+  <nav id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='seeds.html'><span>Seeds</span></a>
+      <ul>
+         <li><a href='seeds.html#flowers'><span>Flower Seeds</span></a></li>
+         <li><a href='seeds.html#veggies'><span>Vegetable Seeds</span></a></li>
+         <li><a href='slideshow.html#flowers'><span>Slide Show</span></a></li>
+         <li><a href='gallery.html#flowers'><span>Gallery</span></a></li>
+         <li><a href='articles.html'><span>Tips</span></a></li>
+         <li class='last'><a href='articles.html'><span>Plant Care</span></a></li>            
+      </ul>
+   </li>     
+   <li class='has-sub'><a href='contact_us.html'><span>About Us</span></a>
+      <ul>
+         <li><a href='contact_us.html'><span>Contact US</span></a></li>
+         <li class='last'><a href='mailto:csills2313@gmail.com'><span>Email Us</span></a></li>
+      </ul>
+   </li>   
+</ul>
+</nav>
+  
+<div class="separator"></div>
+<div class="clearboth"></div>
+<div class="division"> 
+  <h2>Contact Us</h2>
+  
+</div>
+<form id=contactus onSubmit="MM_validateForm('name','','R','postcode','','R','country','','R','address','','R');return document.MM_returnValue">
+	<fieldset>
+		<legend>Contact Info</legend>
+		<ol>
+			<li>
+				<label for=name>Name</label>
+				<input id=name name=name type=text placeholder="First and last name" required autofocus>
+			</li>
+			<li>
+				<label for=email>Email</label>
+				<input id=email name=email type=email placeholder="example@domain.com" required>
+			</li>
+			<li>
+				<label for=phone>Phone</label>
+				<input id=phone name=phone type=tel placeholder="Eg. +447500000000" required>
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset>
+		<legend>Mailing Address</legend>
+		<ol>
+			<li>
+				<label for=address>Address</label>
+				<textarea id=address name=address rows=5 required></textarea>
+			</li>
+			<li>
+				<label for=postcode>Post code</label>
+				<input id=postcode name=postcode type=text required>
+			</li>
+			<li>
+				<label for=country>Country</label>
+				<input id=country name=country type=text required>
+			</li>
+		</ol>
+	</fieldset>
+	
+	<fieldset>
+		<button type=submit>Submit</button>
+	</fieldset>
+</form>
+<div class="division"> 
+  <h2>&nbsp;</h2>
+  
+</div>
+</section>
+
+<div class="clearboth"></div>
+
+
+<footer class="footer">
+<div id="footercontent">
+
+  <h1>Created By Carter Sills 2014</h1>
+  <h2>All images obtained from <a href="http://all-free-download.com/free-photos/flower-images.html">All-Free-Download.com</a></h2>
+</div>
+
+</footer>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
